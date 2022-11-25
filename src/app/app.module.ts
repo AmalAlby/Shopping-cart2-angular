@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AddproductComponent } from './addproduct/addproduct.component';
 import { RouterModule, Routes } from '@angular/router';
+import { ViewproductComponent } from './viewproduct/viewproduct.component';
 
 
 const myroute:Routes=[
@@ -12,6 +13,10 @@ const myroute:Routes=[
   {
     path:"",
     component:AddproductComponent
+  },
+  {
+    path:"view",
+    component:ViewproductComponent
   }
 
 ]
@@ -19,7 +24,8 @@ const myroute:Routes=[
 @NgModule({
   declarations: [
     AppComponent,
-    AddproductComponent
+    AddproductComponent,
+    ViewproductComponent
   ],
   imports: [
     BrowserModule,
