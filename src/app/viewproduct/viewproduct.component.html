@@ -1,3 +1,4 @@
+<app-navbar></app-navbar>
 <div class="container">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
@@ -13,7 +14,7 @@
                           <li class="list-group-item">Product ID: {{i.id}}</li>
                           <li class="list-group-item">Price: {{i.price}}</li>
                           <li class="list-group-item">Category: {{i.category}}</li>
-                          <li class="list-group-item">Customer Rating{{i.rating}}</li>
+                          <li class="list-group-item">Customer Rating: {{i.rating.rate}}</li>
                         </ul>
                         <div class="card-body">
                           <button class="btn btn-primary">Buy Now</button>
