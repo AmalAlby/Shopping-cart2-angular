@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AddproductComponent {
 
+  image=""
+  title=""
+  sname=""
+  description=""
+  quantity=""
+
+  read=()=>{
+  let data:any={"title":this.title,"description":this.description,"image":this.image,"sname":this.sname,"quantity":this.quantity}
+    console.log(data)
+}
 }
